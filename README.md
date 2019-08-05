@@ -1,4 +1,4 @@
-##Contact form API implementation
+#Contact form API implementation
 
 Provided  semi-dockerized application with `docker-compose.yml` to have mysql containerized to simplify application launch:
 - run `docker-compose up -d` to have mysql db running in container
@@ -24,7 +24,7 @@ For unix-like environments project is also provided with `makefile` commands, so
 - `make test` runs unit tests
 - `make run` runs symfony server
 
-###Notice: 
+#Notice: 
 Docker setup will create `symfony-contact-form_dbdata` volume. 
 One can view docker volumes with `docker volume ls` command.
 In order to remove unneeded volume from the system one needs to run `docker volume rm symfony-contact-form_dbdata` command.
