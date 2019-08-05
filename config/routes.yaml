@@ -1,3 +1,20 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+create_contact:
+  path: /contact
+  controller: App\Controller\ContactController::createContact
+  methods: POST
+  defaults:
+    _format: json
+
+get_contact:
+  path: /contact/{id}
+  controller: App\Controller\ContactController::getContact
+  methods: GET
+
+import_contacts:
+  path: /contact/import
+  controller: App\Controller\ContactController::importContacts
+  methods: POST

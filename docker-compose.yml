@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: contact
+    ports:
+      - "3306:3306"
+volumes:
+  dbdata:
